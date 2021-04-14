@@ -1,0 +1,58 @@
+/////////////////////////////////   NAWIGACJA  ///////////////////////////////
+header
+    .fa-chevron-down
+        display: block
+        position: absolute
+        bottom: 20px
+        font-size: 30px
+        left: 50%
+        transform: translateX(-50%)
+        animation: bounce 1.6s infinite
+        color: white
+
+
+/////////////////////////////////   PORTFOLIO  ///////////////////////////////
+#portfolio
+    h2
+        text-transform: uppercase
+        text-align: center
+
+    .carousel-item
+        position: relative
+        height: 600px
+
+    img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+
+    .carousel-caption
+        position: absolute
+        left: 0
+        right: 0
+        padding: 40px 0
+        background-color: rgba(0,0,0,.8)
+
+    .carousel-indicators
+        margin-bottom: 20px
+
+
+@media screen and ( min-width: 1200px)
+    #prices
+        .price-wrap
+            width: 85%
+
+    #team
+        .card-text
+            height: 16px
+
+@media screen and ( min-width: 1800px )
+    #team
+        .card-text
+            height: 18px
+
+@media screen and ( min-width: 2000px )
+    #prices
+        .price-wrap
+            width: 70%
